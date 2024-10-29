@@ -1,4 +1,4 @@
-# zUzU-Chat
+# ZuzChat
 Meet Zuzu, your interactive chat companion crafted with HTML, CSS, and JavaScript. This responsive chat bot offers a seamless experience across all devices, providing engaging conversations with its pre-defined responses.
 
 # ZuzChat
@@ -19,8 +19,6 @@ ZuzuChat is a responsive chat bot created with HTML, CSS, and JavaScript. Engage
 
 Feel free to explore, contribute, and enhance the world of conversational interfaces with ZuzChat!
 
-## Screenshots
-![ZuzuChat Screenshot](screenshots/zuzuchat-screenshot.png)
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
