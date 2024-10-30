@@ -67,7 +67,8 @@ html, body {
     font-size: 1rem;
     text-align: center;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5);
-    transition: background 0.4s ease, transform 0.3s ease;
+    transition: background 0.4s ease ;
+    animation: floatUpDown 1.5s ease-in-out infinite;
 }
 
 .dialog-box::before {
@@ -87,6 +88,19 @@ html, body {
     background: var(--dialog-box-hover);
     transform: translateY(-4px); 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(-4px); 
+    }
+    50% {
+        transform: translateY(4px); 
+    }
+    100% {
+        transform: translateY(-4px); 
+    }
 }
 
 .chat-button {
