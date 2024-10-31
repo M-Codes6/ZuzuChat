@@ -6,10 +6,10 @@
 
 
 :root {
-    --odd-gradient-start: #56C8D8;
-    --odd-gradient-end: #3BA5B4; 
-    --even-gradient-start: #F7B5C2;
-    --even-gradient-end: #EA869B;
+    --odd-gradient-start: #F7B5C2;
+    --odd-gradient-end: #EA869B; 
+    --even-gradient-start: #56C8D8;
+    --even-gradient-end: #3BA5B4;
     --header-bg: #333333;
     --header-hover: #4d4d4d;
     --chat-container-bg: #F5F7FA;
@@ -57,7 +57,7 @@ body {
     background: linear-gradient(135deg, var(--odd-gradient-start), var(--odd-gradient-end));
     color: #2C3E50;
     align-self: flex-end;
-    margin-left: auto; 
+    margin-right: auto; 
     box-shadow: var(--all-box-shadow);
 }
 
@@ -66,7 +66,7 @@ body {
     background: linear-gradient(135deg, var(--even-gradient-start), var(--even-gradient-end));
     color: #2C3E50;
     align-self: flex-start;
-    margin-right: auto; 
+    margin-left: auto; 
     box-shadow: var(--all-box-shadow);
 }
 
@@ -251,3 +251,38 @@ input[type="text"] {
     }
 }
 
+
+
+
+  /* Updated Css */
+  
+
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-style: italic;
+    color: grey;
+    font-size: 12px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 0 2px;
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { 
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.5);
+        }
+}
+
+ 

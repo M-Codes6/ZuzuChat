@@ -1,6 +1,7 @@
 // Get references to HTML elements
 const chatBox = document.getElementById("chat-box");
 const userInput = document.getElementById("user-input");
+const typingIndicator = document.getElementById("typing-indicator");
 
 // Define predefined responses
 const responses = {
@@ -10,6 +11,9 @@ const responses = {
     "ok": "thank you !",
     "ohk": "thank you !",
     "k": "thank you !",
+    "bye": "Goodbye! Have a great day!",
+    "by": "Goodbye! Have a great day!",
+    "ok bye": "Goodbye! Have a great day!",
     "what can u do for me" : "I'm here to asist u !",
     "wat can u do for me" : "I'm here to asist u !",
     "how are you": "I'm just a bot, so I don't have feelings.",
@@ -93,9 +97,14 @@ function sendMessage() {
 
     appendMessage(userMessage, "chat-user");
 
+    typingIndicator.style.display = "flex";
+
     setTimeout(() => {
         const botMessage = getBotResponse(userMessage);
         appendMessage(botMessage, "chat-bot");
+
+        typingIndicator.style.display = "none";
+
     }, 500);
 
     userInput.value = "";
@@ -165,4 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 1000);
     }
   });
+
+
+
 
