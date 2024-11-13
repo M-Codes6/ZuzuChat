@@ -1,0 +1,31 @@
+{
+  "name": "Zuzu Chatbot",
+  "short_name": "Zuzu",
+  "description": "An interactive chatbot for everyone.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "icons": [
+    {
+      "src": "/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ], 
+  "screenshots": [
+    {
+      "src": "/images/zuzu.png",
+      "sizes": "390x768",
+      "type": "image/png",
+      "form_factor": "narrow"  
+    }
+  ]
+}
